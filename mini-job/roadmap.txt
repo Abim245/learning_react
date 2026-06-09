@@ -1,0 +1,38 @@
+Project 3: Mini Job Tracker (Portfolio-Level Beginner Project)
+
+Since you're a CS student and looking toward internships and jobs, this one is practical.
+
+Features
+
+Track applications:
+
+Company
+Position
+Status
+
+Statuses:
+
+Applied
+Interview
+Rejected
+Accepted
+
+Example:
+
+Google - Frontend Intern - Applied
+Microsoft - React Intern - Interview
+
+Allow:
+
+Add application
+Edit status
+Delete
+Filter by status
+Save to localStorage
+
+Display:
+
+Applied: 5
+Interview: 2
+Rejected: 1
+Accepted: 0

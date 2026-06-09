@@ -1,0 +1,39 @@
+🥈 Project 2: Expense Tracker
+
+Concepts Tested
+
+State management
+Derived state
+Component structure
+Local Storage
+Forms
+Features
+
+Add expense:
+
+Description
+Amount
+Category
+
+Example:
+
+Food - ₦2000
+Transport - ₦500
+Data - ₦3000
+
+Display:
+
+Total Expenses: ₦5500
+
+Allow:
+
+Delete expense
+Filter by category
+Persist data using localStorage
+Why this project?
+
+This is very close to real-world React apps.
+
+You'll start thinking:
+
+What state should live where?
