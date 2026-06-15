@@ -19,14 +19,23 @@ useEffect(() => {
   }
   const [activeFilter, setActiveFilter] = useState("all")
 const filteredExpenses = expense.filter(exp => activeFilter === "all" ? true : exp.category === activeFilter)
-  return(
-    <div>
-      <ExpenseTotal expense={expense} />
-      <AddExpense setExpense={setExpense} />
-      <ExpenseList expense={filteredExpenses} deleteExpense={deleteExpense} />
-      <ExpenseFilter activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
+ return(
+    <div className="app">
+        <h1 className="app-title">Expense Tracker</h1>
+        <div className="dashboard">
+            <div className="left-panel">
+                <AddExpense setExpense={setExpense} />
+            </div>
+            <div className="right-panel">
+                <ExpenseTotal expense={expense} />
+                <ExpenseFilter activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
+                <ExpenseList expense={filteredExpenses} deleteExpense={deleteExpense} />
+            </div>
+        </div>
     </div>
-  )
+)
+
+
 }
 
 export default App;

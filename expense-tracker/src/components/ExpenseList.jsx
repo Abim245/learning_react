@@ -1,15 +1,18 @@
 function ExpenseList({expense, deleteExpense}) {
     return(
-         <div >
-      {expense.map((exp, index) => (
-        <div key={index} >
-          <p>{exp.description}</p>
-          <p>₦{exp.amount}</p>
-          <p>{exp.category}</p>
-          <button onClick={() => deleteExpense(exp.id)}>Delete</button>
+        <div className="expense-list">
+            <h2 className="expense-list-title">Recent Expenses</h2>
+            {expense.map((exp, index) => (
+                <div key={index} className="expense-item">
+                    <div className="expense-info">
+                        <p className="expense-description">{exp.description}</p>
+                        <p className="expense-category">{exp.category}</p>
+                    </div>
+                    <p className="expense-amount">₦{exp.amount}</p>
+                    <button className="delete-btn" onClick={() => deleteExpense(exp.id)}>Delete</button>
+                </div>
+            ))}
         </div>
-      ))}
-     </div>
     )
 }
 

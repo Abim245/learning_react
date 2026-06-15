@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #F0F2FF;
+    color: #1E1E2F;
+}
+
+.app {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1E1E2F;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 24px;
+}
+
+.left-panel {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    width: 350px;
+    height: fit-content;
+    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.08);
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ExpenseTotal */
+.expense-total {
+    background: #7C3AED;
+    border-radius: 16px;
+    padding: 24px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+}
+
+.expense-total h2 {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.expense-total span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* ExpenseFilter */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #6C63FF;
+    background: transparent;
+    color: #6C63FF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* .filter-btn.active {
+    background: #6C63FF;
+    color: #FFFFFF;
+}
+
+.filter-btn:hover {
+    background: #6C63FF;
+    color: #FFFFFF; */
+
+
+.filter-btn:focus {
+    outline: none;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #6C63FF !important;
+    color: #FFFFFF !important;
+}
+
+/* AddExpense Form */
+.form-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1E1E2F;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #888AAB;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 2px solid #E8E9F3;
+    font-size: 14px;
+    color: #1E1E2F;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6C63FF;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #5548e0;
+}
+
+/* ExpenseList */
+.expense-list {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.08);
+}
+
+.expense-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1E1E2F;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #F0F2FF;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-info p {
+    margin: 0;
+}
+
+.expense-description {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1E1E2F;
+}
+
+.expense-category {
+    font-size: 12px;
+    color: #888AAB;
+    text-transform: capitalize;
+}
+
+.expense-amount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C63FF;
+}
+
+.delete-btn {
+    background: #FFF0F0;
+    color: #FF6B6B;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: #FF6B6B;
+    color: white;
+}
