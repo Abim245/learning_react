@@ -221,3 +221,39 @@ body {
     background: #FF6B6B;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .app {
+        padding: 20px 16px;
+    }
+
+    .app-title {
+        font-size: 22px;
+    }
+
+    .expense-total span {
+        font-size: 28px;
+    }
+
+    .filter-buttons {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .expense-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
